@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Recognition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .result {
+            margin-top: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="nav1.css">
+
+</head>
+<body>
+    <header>
+        <h1>Plant Disease Detection and Treatment</h1>
+    </header>
+    <section id="upload-section">
+
+        <h2>Upload Plant Image</h2>
+        <div class="container">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" id="imageInput" name="file" accept="image/*" required>
+                <br><br>
+                <button type="submit">Upload Image</button>
+            </form>
+        </div>
+    </section>
+    <section id="result-section">
+        <h2>Disease Detection Result</h2>
+        <div class="result">
+            <h3 id="resultText"></h3>
+            <img id="uploadedImage" style="max-width: 300px; display: none;" />
+        </div>
+    </section>
+    <section id="treatment-section">
+        <h2>Treatment Suggestions</h2>
+        <ul id="treatment-suggestions"></ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Plant Health</p>
+    </footer>
+    <script src="nav1.js"></script>
+</body>
+</html>
