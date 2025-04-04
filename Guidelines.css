@@ -1,0 +1,104 @@
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebe1e1;
+}
+
+/* Navigation bar styles */
+header {
+    background-color: #eee7e7;
+    color: #f1eaea;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(13, 10, 10);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    text-align:center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #e4d5d5;
+    color: #eae0e0;
+    padding: 60px 0;
+    text-align:center;
+    position: fixed;
+    width: 600%;
+    bottom: 0;
+}
+.soni6{
+    width: 80%;
+    min-height: 90vh;
+    background-image: url(image/def.jpg);
+    background-position: centre;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+}
+.soni6 h1{
+    margin-block: 5%;
+    font-size: 30px;
+    color:#171616;
+    align-items: center;
+    animation-delay: 0.9s;
+}
+.soni6 p{
+    margin-block: 5%;
+    font-size: 20px;
+    margin: 30px;
+    color:#222121;
+    align-items: center;
+    animation-delay: 1s;
+}
+.soni6 .anim h1{
+    margin-block: 5%;
+    font-size: 20px;
+    color:#090000;
+    align-items: center;
+    animation-delay: 0.9s;
+}
+.soni6 .anim p{
+    margin-block: 5%;
+    font-size: 20px;
+    margin: 30px;
+    color:#0e0000;
+    align-items: center;
+    animation-delay: 1s;
+
+}
+.anim{
+    opacity: 0;
+    transform:translateY(30px);
+    animation: moveup 1s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 2;
+        transform:translateY(0px);
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soni's Website</title>
+    <link rel="stylesheet" href="FAQ.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <p>General Questions</p>
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq">
+            <button class="accordion">
+                What is Fulseflora?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Fulseflora is an online platform that provides comprehensive information on various types of plants, leaves, and flowers, along with their characteristics, types of diseases, treatment methods (organic and chemical), and fertilizers. Additionally, our website features an online shop for home decor plants, flowers, and fertilizers.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                What is the purpose of Fulseflora?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>The purpose of Fulseflora is to provide a one-stop solution for plant enthusiasts, gardeners, and homeowners to learn about different types of plants, their care, and maintenance. Our platform also aims to promote sustainable and eco-friendly practices in gardening and plant care.</p>
+            </div>
+        </div>
+       <div class="faq">
+          <button class="accordion">
+              What types of plants are featured on Fulseflora?
+              <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+             <p> Our website features a wide range of plants, including flowering plants, foliage plants, succulents, herbs, and more. We also provide information on different types of leaves and flowers.</p>
+           </div>
+       </div>
+       <div class="faq">
+          <button class="accordion">
+            What types of diseases are covered on Fulseflora?
+              <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+             <p>  We provide information on common diseases affecting plants, including fungal, bacterial, and viral diseases. Our website also covers pest-related issues and nutrient deficiencies.</p>
+           </div>
+       </div>
+       <div class="faq">
+          <button class="accordion">
+            What treatment methods are discussed on Fulseflora? 
+               <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p> We offer guidance on both organic and chemical treatment methods for various plant diseases. Our website also provides information on preventive measures to avoid diseases and pests.</p>
+          </div>
+       </div>
+       <div class="faq">
+           <button class="accordion">
+            What types of fertilizers are discussed on Fulseflora? 
+               <i class="fa-solid fa-chevron-down"></i>
+           </button>
+            <div class="pannel">
+              <p> Our website covers various types of fertilizers, including organic, chemical, and natural fertilizers. We also provide information on how to choose the right fertilizer for your plants.</p>
+          </div>
+       </div>
+       <div class="faq">
+           <button class="accordion">
+                What products are available in the Fulseflora online shop? 
+                   <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Our online shop features a range of home decor plants, flowers, and fertilizers. We also offer gardening tools and accessories</p>
+           </div>
+       </div>
+       <div class="faq">
+            <button class="accordion">
+                Do I need to create an account to use Fulseflora? 
+                  <i class="fa-solid fa-chevron-down"></i>
+           </button>
+           <div class="pannel">
+               <p> While creating an account is not mandatory, it allows you to save your favorite plants, access your order history, and receive personalized recommendations</p>
+            </div>
+       </div>     
+       <div class="faq">
+          <button class="accordion">
+            How do I contact Fulseflora?
+             
+              <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+              <p>You can contact us through our website's contact form, email, or social media channels. We respond to all inquiries within 24-48 hours.</p>
+           </div>
+      </div>
+  </div>
+  <script>
+    var acc = document.getElementsByClassName
+    ("accordion");
+    var i;
+
+    for(i=0; i < acc.length; i++){
+        acc[i].addEventListener("click",function(){
+            this.classList.toggle("active");
+            this.parentElement.classList.toggle("active");
+            var pannel=this.nextElementSibling;
+            if(pannel.style.display ==="block"){
+                pannel.style.display="none";
+            }else{
+                pannel.style.display="block";
+            }
+
+        });
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soni's website</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h1>Sign Up</h1>
+                    <form>
+                        <input type="email" class="input-box" placeholder="your email id" required>
+                        <input type="username" class="input-box" placeholder="username" required>
+                        <input type="password" class="input-box" placeholder="password" required>
+                        <input type="re-enter-password" class="input-box" placeholder="re-enter-password" required>
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <input type="checkbox"><span>Remember me</span>
+                    </form>
+                    <button type="button1" class="btn1" onclick="openRegistered()">I'M A Seller</button>
+                    <a href="#"></a>
+                </div>
+                <div class="card-back"> <h1>Registered</h1>
+                    <form>
+                        <input type="text" class="input-box" placeholder="your name" required>
+                        <input type="email" class="input-box" placeholder="your email id" required>
+                        <input type="Company name" class="input-box" placeholder="Company name" required>
+                        <input type="password" class="input-box" placeholder="password" required>
+                        <input type="re-enter-password" class="input-box" placeholder="re-enter-password" required>
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <input type="checkbox"><span>Remember me</span>
+                    </form>
+                    <button type="button1" class="btn1" onclick="opensignup()">I've an account</button>
+                    <a href="#">Forgot password</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var card = document.getElementById("card");
+        function openRegistered(){
+            card.style.transform="rotateY(-180deg)";
+        }
+        function opensignup(){
+            card.style.transform="rotateY(0deg)";
+        }
+    </script>
+</body>
+</html>

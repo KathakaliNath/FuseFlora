@@ -1,0 +1,744 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shortcut icon" href="assets1/img/logo__2_-removebg-preview.png" type="image/x-icon">
+
+    
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!--~~~~~~~~~~~~~~~ Swiper's CSS ~~~~~~~~~~~~~~~-->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./output1.css">
+    <title>fuseflora </title>
+</head>
+<body>
+    <header id="navbar" class="bg-green-950 fixed w-full top-0 left-0 z-50">
+        <nav class="container flex items-center justify-center h-16 sm:h-20">
+            <div class="font-Lobster sm:text-2xl">FuseFlora</div>
+
+            <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+
+                <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                    <li>
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li>
+                        <a href="product.html" class="nav-link">Product</a>
+                    </li>
+                    <li>
+                        <a href="#Popular" class="nav-link">Popular</a>
+                    </li>
+                    <li>
+                        <a href="#Review" class="nav-link">Review</a>
+                    </li>
+                    <li>
+                        <a href="login1.html" class="nav-link">Login</a>
+                    </li>
+                </ul>
+
+                <div class="absolute -bottom-0 -right-10 opacity-90 lg:hidden">
+                    <img src="assets1/img/leaf-1.png" alt="leaf_image" class="w-32">
+                </div>
+
+
+                <div class="absolute -top-5 -left-5 rotate-90 opacity-90 lg:hidden">
+                    <img src="assets1/img/leaf-2.png" alt="leaf_image"class="w-32">
+                </div>
+            </div>
+
+            <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+                <i class="ri-menu-4-line" id="hamburger"></i>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+
+
+
+
+
+    <section id="about" class="relative overflow-hidden">
+        <div class="absolute -top-8 -right-12 opacity-50">
+            <img src="assets1/img/leaf-3.png" alt="leaf_image" class="w-40 md:w-52 xl:w-64">
+
+        </div>
+        <div class="flex flex-col items-center gap-3 text-center mb-40">
+            <h2 class="title">Product</h2>
+            <p class="max-w-2xl">Search here what you want......</p>
+        </div>
+
+        <div class="container w-full grid grib-col-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <!--card1-->
+            <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                <img src="assets1/img/flow1.avif" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                <p class="italic">Kalanchoe Flowers</p>
+                <h3>
+                    Top 3 Beautiful Kalanchoe Flowers of the Season</h3>
+
+                <div class="text-yellow-500 text-xs py-3">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <p class="text-xl">₹ 859</p>
+                    <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                        <a href="order.html" class="ri-shopping-cart-fill"></a>
+                    </button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <a href="addcart.html" class="">add</a>
+                    </button>
+                </div>
+            </div>
+
+             <!--card2-->
+             <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                <img src="assets1/img/flow.avif" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                <p class="italic">Peace Lily </p>
+                <h3>Spathiphyllum - Plant</h3>
+
+                <div class="text-yellow-500 text-xs py-3">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <p class="text-xl">₹250</p>
+                    <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                        <a href="order.html" class="ri-shopping-cart-fill"></a>
+                    </button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <a href="add to cart1.html" class="">add</a>
+                    </button>
+                </div>
+            </div>
+             <!--card3-->
+             <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                <img src="assets1/img/flow2.avif" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                <p class="italic">Jasminum sambac</p>
+                <h3>
+                     Mogra, Arabian Jasmine - Plant</h3>
+
+                <div class="text-yellow-500 text-xs py-3">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <p class="text-xl">₹510</p>
+                    <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                        <a href="order.html" class="ri-shopping-cart-fill"></a>
+                    </button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <span>Add</span>
+                    </button>
+                </div>
+            </div>
+             <!--card4-->
+             <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                <img src="assets1/img/flow3.avif" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                <p class="italic">5 Best Fragrant Plants</p>
+                <h3>Fragrant Plants</h3>
+
+                <div class="text-yellow-500 text-xs py-3">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <p class="text-xl">₹1150</p>
+                    <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                        <a href="order.html" class="ri-shopping-cart-fill"></a>
+                    </button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <span>Add</span>
+                    </button>
+                </div>
+            </div>
+                <!--card1-->
+                <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                    <img src="assets1/img/flow4.avif" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="italic">Rose (Red) - Plant</p>
+                    <h3>Rose (Red)</h3>
+
+                    <div class="text-yellow-500 text-xs py-3">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      <i class="ri-star-line text-gray-400"></i>
+                      <i class="ri-star-line text-gray-400"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="text-xl">₹150</p>
+                        <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                            <a href="order.html" class="ri-shopping-cart-fill"></a>
+                        </button>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            <span>Add</span>
+                        </button>
+                    </div>
+                </div>
+
+                 <!--card2-->
+                 <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                    <img src="assets1/img/flow5.avif" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="italic">Gokarna (Blue) - Plant</p>
+                    <h3>Clitoria Ternatea</h3>
+
+                    <div class="text-yellow-500 text-xs py-3">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      <i class="ri-star-line text-gray-400"></i>
+                      <i class="ri-star-line text-gray-400"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="text-xl">₹220</p>
+                        <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                            <a href="order.html" class="ri-shopping-cart-fill"></a>
+                        </button>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            <span>Add</span>
+                        </button>
+                    </div>
+                </div>
+                 <!--card3-->
+                 <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                    <img src="assets1/img/flow6.webp" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="italic">(Any Color) - Plant</p>
+                    <h3>Hydrangea macrophylla </h3>
+
+                    <div class="text-yellow-500 text-xs py-3">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      <i class="ri-star-line text-gray-400"></i>
+                      <i class="ri-star-line text-gray-400"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="text-xl">₹400</p>
+                        <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                            <a href="order.html" class="ri-shopping-cart-fill"></a>
+                        </button>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            <span>Add</span>
+                        </button>
+                    </div>
+                </div>
+                 <!--card4-->
+                 <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                    <img src="assets1/img/plant.avif" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="italic">  Air Plant</p>
+                    <h3>Living Granite</h3>
+
+                    <div class="text-yellow-500 text-xs py-3">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      <i class="ri-star-line text-gray-400"></i>
+                      <i class="ri-star-line text-gray-400"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="text-xl">₹650</p>
+                        <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                            <a href="order.html" class="ri-shopping-cart-fill"></a>
+                        </button>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            <span>Add</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                    <img src="assets1/img/plant1.avif" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="italic"> ionantha - Plant</p>
+                    <h3> Air Plant, Tillandsia ionantha var</h3>
+
+                    <div class="text-yellow-500 text-xs py-3">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      <i class="ri-star-line text-gray-400"></i>
+                      <i class="ri-star-line text-gray-400"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="text-xl">₹300</p>
+                        <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                            <a href="order.html" class="ri-shopping-cart-fill"></a>
+                        </button>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            <span>Add</span>
+                        </button>
+                    </div>
+                </div>
+
+                 <!--card2-->
+                 <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                    <img src="assets1/img/plant2.avif" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="italic">Air Plant </p>
+                    <h3>Tillandsia Cotton King - Plant</h3>
+
+                    <div class="text-yellow-500 text-xs py-3">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      <i class="ri-star-line text-gray-400"></i>
+                      <i class="ri-star-line text-gray-400"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="text-xl">₹270</p>
+                        <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                            <a href="order.html" class="ri-shopping-cart-fill"></a>
+                        </button>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            <span>Add</span>
+                        </button>
+                    </div>
+                </div>
+                 <!--card3-->
+                 <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                    <img src="assets1/img/plant3.avif" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="italic">Air Plant, </p>
+                    <h3>Tillandsia ionantha Guatemala (Large) - Plant</h3>
+
+                    <div class="text-yellow-500 text-xs py-3">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      <i class="ri-star-line text-gray-400"></i>
+                      <i class="ri-star-line text-gray-400"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="text-xl">₹500</p>
+                        <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                            <a href="order.html" class="ri-shopping-cart-fill"></a>
+                        </button>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            <span>Add</span>
+                        </button>
+                    </div>
+                </div>
+                 <!--card4-->
+                 <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                    <img src="assets1/img/plant4.avif" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                    <p class="italic"> Air Plant</p>
+                    <h3>Ananas</h3>
+
+                    <div class="text-yellow-500 text-xs py-3">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      <i class="ri-star-line text-gray-400"></i>
+                      <i class="ri-star-line text-gray-400"></i>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <p class="text-xl">₹1170</p>
+                        <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                            <a href="order.html" class="ri-shopping-cart-fill"></a>
+                        </button>
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            <span>Add</span>
+                        </button>
+                    </div>
+                </div>
+                <!--card1-->
+            <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                <img src="assets1/img/plant5.avif" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                <p class="italic">  Air Plant</p>
+                <h3> Tree of Life </h3>
+
+                <div class="text-yellow-500 text-xs py-3">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <p class="text-xl">₹300</p>
+                    <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                        <a href="order.html" class="ri-shopping-cart-fill"></a>
+                    </button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <span>Add</span>
+                    </button>
+                </div>
+            </div>
+
+             <!--card2-->
+             <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                <img src="assets1/img/seed.avif" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                <p class="italic"> Desi Vegetable Seeds</p>
+                <h3>Cauliflower Super Snowball</h3>
+
+                <div class="text-yellow-500 text-xs py-3">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <p class="text-xl">₹150</p>
+                    <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                        <a href="order.html" class="ri-shopping-cart-fill"></a>
+                    </button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <span>Add</span>
+                    </button>
+                </div>
+            </div>
+             <!--card3-->
+             <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                <img src="assets1/img/eed1.avif" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                <p class="italic"> Flower Seeds</p>
+                <h3> Balsamine Rose Flower</h3>
+
+                <div class="text-yellow-500 text-xs py-3">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <p class="text-xl">₹50</p>
+                    <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                        <a href="order.html" class="ri-shopping-cart-fill"></a>
+                    </button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <span>Add</span>
+                    </button>
+                </div>
+            </div>
+             <!--card4-->
+             <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                <img src="assets1/img/seed1.webp" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                <p class="italic"> </p>
+                <h3>Set of 10 Best Microgreen Seeds</h3>
+
+                <div class="text-yellow-500 text-xs py-3">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <p class="text-xl">₹150</p>
+                    <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                        <a href="order.html" class="ri-shopping-cart-fill"></a>
+                    </button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <span>Add</span>
+                    </button>
+                </div>
+            </div>
+            <!--card1-->
+            <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                <img src="assets1/img/seed2.webp" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                <p class="italic"> Flower Seeds</p>
+                <h3>Balsam Tom Thumb Mixed Color</h3>
+
+                <div class="text-yellow-500 text-xs py-3">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <p class="text-xl">₹300</p>
+                    <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                        <a href="order.html" class="ri-shopping-cart-fill"></a>
+                    </button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <span>Add</span>
+                    </button>
+                </div>
+            </div>
+
+             <!--card2-->
+             <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                <img src="assets1/img/seed3.avif" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                <p class="italic"> Vegetable Seeds</p>
+                <h3>Beetroot F1 Hybrid</h3>
+
+                <div class="text-yellow-500 text-xs py-3">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <p class="text-xl">₹250</p>
+                    <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                        <a href="order.html" class="ri-shopping-cart-fill"></a>
+                    </button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <span>Add</span>
+                    </button>
+                </div>
+            </div>
+             <!--card3-->
+             <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                <img src="assets1/img/seed4.avif" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                <p class="italic"> Flower Seeds</p>
+                <h3>Portulaca F1 Hybrid Mixed Color</h3>
+
+                <div class="text-yellow-500 text-xs py-3">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <p class="text-xl">₹500</p>
+                    <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                        <a href="order.html" class="ri-shopping-cart-fill"></a>
+                    </button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <span>Add</span>
+                    </button>
+                </div>
+            </div>
+             <!--card4-->
+             <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative">
+                <img src="assets1/img/seed5.avif" alt="popular_image" class="w-56 absolute -top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500">
+                <p class="italic"> Herb Seeds</p>
+                <h3>Basil Leaf Italian Broad </h3>
+
+                <div class="text-yellow-500 text-xs py-3">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                  <i class="ri-star-line text-gray-400"></i>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <p class="text-xl">₹150</p>
+                    <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                        <a href="order.html" class="ri-shopping-cart-fill"></a>
+                    </button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        <a href="addcart.html" class="">add</a>
+                        
+                    </button>
+                    
+                </div>
+            </div>
+            <div class="flex flex-col gap-2 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10">
+                <button class="btn">
+                    <span>next page</span>
+                    <i class="ri-leaf-line"></i>
+                </button>
+            </div>
+
+             
+        </div>
+
+    </section>
+     <!-- footer -->
+    <footer class="bg-yellow-100 text-green-950 pt-20 pb-10 md:pt-28 relative">
+        <!-- newsletter -->
+         <div class="container text-white absolute top-0 right-0 left-0 -translate-y-1/2">
+            <div class="bg-green-900 px-10 pt-5 pb-10 space-y-5 rounded-md">
+                <h3><span class="text-yellow-500">Review</span>Your Review make Us Confident</h3>
+
+                    <div class="flex flex-col md:flex-row gap-1">
+                        <input type="message" placeholder="message..." class="w-full px-5 py-3 text-green-900 rounded-md outline-none">
+                        <button class="flex items-center justify-center gap-1 bg-green-950 px-5 py-3 rounded-md hover:opacity-80 duration-300">
+                            <a href="subcription.html" class="nav-link active">Subscribe</a>
+                            <i class="ri-send-plane-2-fill"></i>
+                        </button>
+                    </div>
+            </div>
+         </div>
+        
+        <!-- social icon -->
+         <div class="container mt-16 mb-10">
+            <div class="border-b border-green-500 relative">
+                <div class="absolute top-0 transform -translate-y-1/2 left-0 right-0 max-w-36 mx-auto">
+                    <div class="bg-yellow-100 text-lg text-center space-x-2">
+                        <i class="ri-facebook-fill hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                        <i class="ri-twitter-x-line hover:text-yellow-500 duration-300 cursor-pointer text-base"></i>
+                        <i class="ri-instagram-line hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                        <i class="ri-linkedin-fill hover:text-yellow-500 duration-300 cursor-pointer"></i>
+
+                    </div>
+                </div>
+            </div>
+         </div>
+
+        <!-- content -->
+         <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-center md:text-start">
+             <!-- item1 -->
+            <div>
+                <div class="text-7xl text-green-700 text-center inline-block">
+                    <i class="ri-leaf-fill"></i>
+                    <P class="font-Lobster text-xl sm:text-2xl">FuseFlora.</P> 
+                </div>
+            </div>
+             <!-- item 2-->
+              <div>
+                <p class="mb-5 font-bold text-xl">Quick Link</p>
+
+                <div class="flex flex-col gap-1">
+                    <a href="#">Plants</a>
+                    <a href="#">Flowers</a>
+                    <a href="#">Gerdening</a>
+                    <a href="#">Seeds</a>
+                    <a href="#">Shipping</a>
+                </div>
+              </div>
+                 <!-- item 3-->
+              <div>
+                    <p class="mb-5 font-bold text-xl">Popular Services</p>
+    
+                    <div class="flex flex-col gap-1">
+                        <a href="#">Tree Planting</a>
+                        <a href="#">Grass Cutting</a>
+                        <a href="#">Weeds Control</a>
+                    </div>
+              </div>
+                 <!-- item 3-->
+               <div>
+                    <p class="mb-5 font-bold text-xl">Contact Us</p>
+    
+                    <div class="flex flex-col gap-1">
+                        <a href="#">9100000000</a>
+                        <a href="#">fuseflora@gamil.com</a>
+                        <a href="#">Salt Lake Kolkata 70091</a>
+                    </div>
+              </div> 
+         </div>
+
+        <!-- copyright -->
+         <div class="container">
+            <p class="text-center mt-10 opacity-50">
+                Copyright &copy; 2024 FuseFlora. All rights reserved.</p>
+         </div>
+
+        <!-- floral image -->
+         <div class="absolute bottom-0 left-0 opacity-20 pointer-events-none">
+            <img src="assets1/img/floral-1.png" alt="floral_image" class="w-full lg:w-1/2">
+         </div>
+    </footer>
+
+    <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
+    <a href="#" class="fixed right-4 -bottom-1/2 bg-yellow-500 shadow-sm inline-block px-3 py-1 md:py-2 rounded-md text-lg z-50 hover:-translate-y-1 duration-300" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+         
+
+    <!--~~~~~~~~~~ SCROLLREVEAL ~~~~~~~~~~-->
+    <script src="assets1/js/scrollreveal.min.js"></script>
+
+    <!--~~~~~~~~~~ mainjs ~~~~~~~~~~-->
+    <script src="main.js"></script>
+
+</body>
+</html>

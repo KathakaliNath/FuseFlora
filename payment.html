@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shortcut icon" href="assets1/img/logo__2_-removebg-preview.png" type="image/x-icon">
+
+    
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!--~~~~~~~~~~~~~~~ Swiper's CSS ~~~~~~~~~~~~~~~-->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./payment.css">
+    <title>fuseflora </title>
+</head>
+<body>
+    <section id="about" class="relative overflow-hidden">
+        <div class="absolute -top-8 -right-12 opacity-50">
+            <img src="assets1/img/leaf-3.png" alt="leaf_image" class="w-40 md:w-52 xl:w-64">
+
+        </div>
+        <div class="flex flex-col items-center gap-3 text-center mb-40">
+            <h2 class="title">Payment</h2>
+            <p class="max-w-2xl">Payment Information</p>
+        </div>
+         <!-- Payment Form -->
+        <div class="container w-full grid grib-col-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <!-- Name on Card -->
+            <div class="flex flex-col gap-2 sm:flex-col md:gap-4 lg:pt-5 xl:pt-10">
+                <label for="card-name" class="block text-gray-700 font-bold mb-2">Name on Card</label>
+                <input type="text" id="card-name" name="card-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="Enter name on card" required>
+            </div>
+        </div> 
+          <!-- Card Number -->
+        <div class="container w-full grid grib-col-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div class="flex flex-col gap-2 sm:flex-col md:gap-4 lg:pt-5 xl:pt-10">
+                <label for="card-number" class="block text-gray-700 font-bold mb-2">Card Number</label>
+                <input type="text" id="card-number" name="card-number" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="Enter card number" required>
+            </div> 
+        </div>  
+
+         <!-- Card Number -->
+
+        <div class="container w-full grid grib-col-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div class="flex flex-col gap-2 sm:flex-col md:gap-4 lg:pt-5 xl:pt-10">
+                <label for="expiry-date" class="block text-gray-700 font-bold mb-2">Expiration Date</label>
+                <input type="text" id="expiry-date" name="expiry-date" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="MM/YY" required>
+            </div>
+            <div class="flex flex-col gap-2 sm:flex-col md:gap-4 lg:pt-5 xl:pt-10">
+                <label for="cvv" class="block text-gray-700 font-bold mb-2">CVV</label>
+                <input type="text" id="cvv" name="cvv" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="CVV" required>
+            </div>
+        </div> 
+         <!-- Card Number -->
+
+        <div class="container w-full grid grib-col-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div class="flex flex-col gap-2 sm:flex-col md:gap-4 lg:pt-5 xl:pt-10">
+                <label for="billing-address" class="block text-gray-700 font-bold mb-2">Billing Address</label>
+                <input type="text" id="billing-address" name="billing-address" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="Enter billing address" required>
+            </div> 
+        </div>
+          <!-- Country and Postal Code -->
+       <div class="container w-full grid grib-col-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div class="flex flex-col gap-2 sm:flex-col md:gap-4 lg:pt-5 xl:pt-10">
+                <label for="country" class="block text-gray-700 font-bold mb-2">Country</label>
+                <select id="country" name="country" class="w-full px-4 py-2 border border-yellow-500 rounded-lg focus:outline-none focus:border-blue-500">
+                    <option value="US">India</option>
+                    <option value="CA">Canada</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="AU">Australia</option>
+                </select>
+            </div>
+            <div class="flex flex-col gap-2 sm:flex-col md:gap-4 lg:pt-5 xl:pt-10">
+                <label for="postal-code" class="block text-gray-700 font-bold mb-2">Postal Code</label>
+                <input type="text" id="postal-code" name="postal-code" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="Enter postal code" required>
+            </div>
+        </div>
+        <div class="flex items-center justify-center mt-2">
+            <p>Or</p>
+        </div>
+             <!-- Payment Method -->
+      <div class="container w-full grid grib-col-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"> 
+        <div class="flex flex-col gap-3 sm:flex-col md:gap-4 lg:pt-5 xl:pt-10">
+            <label class="block text-gray-700 font-bold mb-2">Google</label>
+            <div class="flex items-center">
+                <input type="radio" id="credit-card" name="payment" value="credit-card" class="mr-2" required>
+                <label for="credit-card" class="text-gray-700">UPI ID</label>
+            </div>
+        
+         <!-- order Button -->
+        <div class="flex items-center justify-center mt-2">
+            <button class="btn">
+                <span> Pay Now</span>
+                <i class="ri-leaf-line"></i>
+            </button>
+      </div>
+        <!-- Order Summary -->
+        <div class="flex flex-col gap-2 sm:flex-col md:gap-4 lg:pt-5 xl:pt-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Order Summary</h2>
+            <ul class="mb-4">
+                <li class="flex justify-between text-gray-700">
+                    <span>Kalanchoe Flowers
+
+                        Top 3 Beautiful Kalanchoe Flowers of the Season </span>
+                    <span>₹859</span>
+                </li>
+                <li class="flex justify-between text-gray-700">
+                    <span>Delivery fee +Gst inculded</span>
+                    <span>₹100</span>
+                </li>
+                <li class="flex justify-between text-gray-700 font-bold mt-4">
+                    <span>Total</span>
+                    <span>₹959</span>
+                </li>
+            </ul>
+        </div>
+   </section>
+        <!-- footer -->
+        <footer class="bg-yellow-100 text-green-950 pt-20 pb-10 md:pt-28 relative">
+            <!-- newsletter -->
+             <div class="container text-white absolute top-0 right-0 left-0 -translate-y-1/2">
+                <div class="bg-green-900 px-10 pt-5 pb-10 space-y-5 rounded-md">
+                    <h3><span class="text-yellow-500">Review</span>Your Review make Us Confident</h3>
+    
+                        <div class="flex flex-col md:flex-row gap-1">
+                            <input type="message" placeholder="message..." class="w-full px-5 py-3 text-green-900 rounded-md outline-none">
+                            <button class="flex items-center justify-center gap-1 bg-green-950 px-5 py-3 rounded-md hover:opacity-80 duration-300">
+                                <span>Subscribe</span>
+                                <i class="ri-send-plane-2-fill"></i>
+                            </button>
+                        </div>
+                </div>
+             </div>
+            
+            <!-- social icon -->
+             <div class="container mt-16 mb-10">
+                <div class="border-b border-green-500 relative">
+                    <div class="absolute top-0 transform -translate-y-1/2 left-0 right-0 max-w-36 mx-auto">
+                        <div class="bg-yellow-100 text-lg text-center space-x-2">
+                            <i class="ri-facebook-fill hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                            <i class="ri-twitter-x-line hover:text-yellow-500 duration-300 cursor-pointer text-base"></i>
+                            <i class="ri-instagram-line hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                            <i class="ri-linkedin-fill hover:text-yellow-500 duration-300 cursor-pointer"></i>
+    
+                        </div>
+                    </div>
+                </div>
+             </div>
+    
+            <!-- content -->
+             <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-center md:text-start">
+                 <!-- item1 -->
+                <div>
+                    <div class="text-7xl text-green-700 text-center inline-block">
+                        <i class="ri-leaf-fill"></i>
+                        <P class="font-Lobster text-xl sm:text-2xl">FuseFlora.</P> 
+                    </div>
+                </div>
+                 <!-- item 2-->
+                  <div>
+                    <p class="mb-5 font-bold text-xl">Quick Link</p>
+    
+                    <div class="flex flex-col gap-1">
+                        <a href="#">Plants</a>
+                        <a href="#">Flowers</a>
+                        <a href="#">Gerdening</a>
+                        <a href="#">Seeds</a>
+                        <a href="#">Shipping</a>
+                    </div>
+                  </div>
+                     <!-- item 3-->
+                  <div>
+                        <p class="mb-5 font-bold text-xl">Popular Services</p>
+        
+                        <div class="flex flex-col gap-1">
+                            <a href="#">Tree Planting</a>
+                            <a href="#">Grass Cutting</a>
+                            <a href="#">Weeds Control</a>
+                        </div>
+                  </div>
+                     <!-- item 3-->
+                   <div>
+                        <p class="mb-5 font-bold text-xl">Contact Us</p>
+        
+                        <div class="flex flex-col gap-1">
+                            <a href="#">9100000000</a>
+                            <a href="#">fuseflora@gamil.com</a>
+                            <a href="#">Salt Lake Kolkata 70091</a>
+                        </div>
+                  </div> 
+             </div>
+    
+            <!-- copyright -->
+             <div class="container">
+                <p class="text-center mt-10 opacity-50">
+                    Copyright &copy; 2024 FuseFlora. All rights reserved.</p>
+             </div>
+    
+            <!-- floral image -->
+             <div class="absolute bottom-0 left-0 opacity-20 pointer-events-none">
+                <img src="assets1/img/floral-1.png" alt="floral_image" class="w-full lg:w-1/2">
+             </div>
+        </footer>
+    
+        <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
+        <a href="#" class="fixed right-4 -bottom-1/2 bg-yellow-500 shadow-sm inline-block px-3 py-1 md:py-2 rounded-md text-lg z-50 hover:-translate-y-1 duration-300" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+    
+        <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+             
+    
+        <!--~~~~~~~~~~ SCROLLREVEAL ~~~~~~~~~~-->
+        <script src="assets1/js/scrollreveal.min.js"></script>
+    
+        <!--~~~~~~~~~~ mainjs ~~~~~~~~~~-->
+        <script src="paypal.js"></script>
+</body>
+</html>

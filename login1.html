@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shortcut icon" href="assets1/img/logo__2_-removebg-preview.png" type="image/x-icon">
+
+    
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!--~~~~~~~~~~~~~~~ Swiper's CSS ~~~~~~~~~~~~~~~-->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./login.css">
+    <title>fuseflora </title>
+</head>
+<body>
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header id="navbar" class="bg-green-950 fixed w-full top-0 left-0 z-50">
+        <nav class="container flex items-center justify-center h-16 sm:h-20">
+            <div class="font-Lobster sm:text-2xl">FuseFlora</div>
+
+            <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+
+                <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                    <li>
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li>
+                        <a href="product.html" class="nav-link">Product</a>
+                    </li>
+                    <li>
+                        <a href="#Popular" class="nav-link">Popular</a>
+                    </li>
+                    <li>
+                        <a href="#Review" class="nav-link">Review</a>
+                    </li>
+                   
+                </ul>
+
+                <div class="absolute -bottom-0 -right-10 opacity-90 lg:hidden">
+                    <img src="assets1/img/leaf-1.png" alt="leaf_image" class="w-32">
+                </div>
+
+
+                <div class="absolute -top-5 -left-5 rotate-90 opacity-90 lg:hidden">
+                    <img src="assets1/img/leaf-2.png" alt="leaf_image"class="w-32">
+                </div>
+            </div>
+
+            <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+                <i class="ri-menu-4-line" id="hamburger"></i>
+            </div>
+            <div class="absolute -top-10 right-0 opacity-30 xl:top-5 animate-movingY">
+                <i class="ri-leaf-line text-6xl text-yellow-500"></i>
+            </div>
+    
+            <div class="absolute bottom-0 left-10  opacity-30 xl:bottom-12 animate-rotating">
+                <i class="ri-flower-line text-6xl text-yellow-500"></i>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <section id="about" class="relative overflow-hidden">
+        <div class="absolute -top-8 -right-12 opacity-50">
+            <img src="assets1/img/leaf-3.png" alt="leaf_image" class="w-40 md:w-52 xl:w-64">
+
+        </div>
+        <div class="flex flex-col items-center gap-3 text-center mb-40">
+            <h2 class="title">Log In</h2>
+            <p class="max-w-2xl"></p>
+            <div class="absolute -top-10 right-0 opacity-30 xl:top-5 animate-movingY">
+                <i class="ri-star-s-fill text-6xl text-yellow-500"></i>
+            </div>
+    
+            <div class="absolute bottom-0 left-10  opacity-30 xl:bottom-12 animate-rotating">
+                <i class="ri-snowflake-line text-6xl text-yellow-500"></i>
+            </div>
+        </div>
+
+
+
+     <!-- Login Container -->
+      
+       <div class="container w-full grid grib-col-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        
+            <!-- Name Field -->
+            
+            <div class="flex flex-col gap-2 sm:flex-col md:gap-4 lg:pt-5 xl:pt-10">
+                <h2 class="text-3xl font-bold text-center text-gray-700 mb-6"> Login</h2>
+            </div>
+         
+       </div>
+      <!-- email Field -->
+       <div class="container w-full grid grib-col-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div class="flex flex-col gap-3 sm:flex-col md:gap-4 lg:pt-5 xl:pt-10">
+            <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+            <input type="email" id="email" name="email" class="w-full px-5 py-3 text-green-900 rounded-md outline-none" placeholder="Enter your email" required>
+          </div>
+          <div class="hidden absolute -top-8 -left-12 opacity-50 lg:block animate-scalingUp">
+            <img src="assets1/img/fl.lo.png" alt="leaf-image" class="w-40 md:w-52 xl:w-64">
+        </div>
+       </div>
+
+      <!--  Field -->
+      <div class="container w-full grid grib-col-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div class="flex flex-col gap-3 sm:flex-col md:gap-4 lg:pt-5 xl:pt-10">
+                <label for="password" class="block text-gray-700 font-bold mb-2">Password</label>
+                <input type="password" id="password" name="password" class="w-full px-5 py-3 text-green-900 rounded-md outline-none" placeholder="Enter your password" required>
+            </div>
+       </div>
+ 
+    
+  </div>
+     <!-- Field -->
+   <div class="container w-full grid grib-col-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"> 
+                <div class="flex flex-col gap-3 sm:flex-col md:gap-4 lg:pt-5 xl:pt-10">
+                    <div class="flex items-center">
+                        <input type="radio" id="credit-card" name="payment" value="credit-card" class="mr-2" required>
+                        <label for="credit-card" class="text-gray-700">remmber</label>
+                    </div>
+                    <a href="#" class="text-blue-500 hover:underline">Forgot Password?</a>
+                </div>
+                <div class="relative  bottom-0 left-10 lg:w-1/2">
+                    <img src="assets1/img/log-removebg-preview.png" alt="home_image" class="home_image">
+                    
+            
+                    <div class="hidden absolute  opacity-30 lg:block animate-scalingUp">
+                        <i class="ri-plant-line text-6xl text-yellow-500"></i>
+                    </div>
+                </div>
+  </div>
+   <!-- order Button -->
+   <div class="container w-full grid grib-col-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"> 
+        <div class="flex flex-col gap-3 sm:flex-col md:gap-4 lg:pt-5 xl:pt-10">
+            <div class="flex items-center">
+                <label for="role" class="block text-gray-700 font-bold mb-2">Login As</label>
+                <select id="role" name="role" class="w-full px-5 py-3 text-green-900 rounded-md outline-none" placeholder="Admin/Seller" required>
+                    <option value="admin">Customer</option>
+                    <option value="seller">Seller</option>
+                </select>
+            </div>
+        </div>
+        <div class="hidden absolute  opacity-30 lg:block animate-scalingUp">
+            <img src="assets1/img/cart-3.png" alt="home_image" class="home_image">
+        </div>
+   </div>
+   <div class="container w-full grid grib-col-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"> 
+        <div class="flex flex-col gap-3 sm:flex-col md:gap-4 lg:pt-5 xl:pt-10">
+            <div class="flex items-center">
+                <button class="btn">
+                    <a href="admin.html">Log In</a>
+                    <i class="ri-leaf-line"></i>
+                </button>
+            </div>
+        </div>
+  </div>
+
+
+    <div class="flex items-center justify-center mt-2">
+     <span>or login with</span>
+    </div>
+
+    <!-- Social Login Buttons -->
+    <div class="flex flex-col gap-3 sm:flex-col md:gap-4 lg:pt-5 xl:pt-10">
+        <button class="w-full bg-red-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-600 mx-1">Google</button>
+        <button class="w-full bg-blue-800 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-900 mx-1">Facebook</button>
+    </div>
+
+    <!-- Signup Link -->
+    <p class="text-center text-gray-600 mt-6">
+    Don't have an account?
+    <a href="#" class="text-blue-500 hover:underline">Sign up </a>
+    </p>
+    <!-- Signup Link -->
+    <p class="text-center text-gray-600 mt-6">
+    Are you a Seller?
+    <a href="admin.html" class="text-blue-500 hover:underline">Sign In </a>
+    </p>
+
+
+</body>
+</html>

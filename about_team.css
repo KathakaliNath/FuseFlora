@@ -1,0 +1,219 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2843c9;
+}
+
+/* Navigation bar styles */
+header {
+    background-color: #eee7e7;
+    color: #030202;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(13, 10, 10);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    text-align:center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #e4d5d5;
+    color: #eae0e0;
+    padding: 60px 0;
+    text-align:center;
+    position: fixed;
+    width: 600%;
+    bottom: 0;
+}
+.sonia{
+    width: 90%;
+    min-height: 90vh;
+    background-image: url(image/red.back.jpg);
+    background-position: center;
+    background-position: center;
+    background-size: cover;
+    color: #ece9e9;
+    padding: 10px 10%;
+    overflow: hidden;
+}
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    flex: 1;
+    text-align: center;
+    margin-right: 150px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+nav ul li a{
+    text-decoration:none;
+    color: #f7f1f1;
+    font-weight: 700;
+    position: relative;
+    padding: 10px;
+}
+nav ul li a::before{
+    content: '';
+    width: 100%;
+    height: 0px;
+    background-color:#93065a;
+    position:absolute;
+    z-index: -1;
+    left: 0;
+    bottom: -5px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    transition: height 0.5s;
+}
+nav ul li a:hover::before{
+    height: 85px;
+}
+.cointainer{
+    padding-top: 8%;
+   
+}
+.cointainer h1{
+    margin-bottom: 40px;
+    font-weight: bold;
+    color:#fff;
+    -webkit-text-stroke: 1px rgb(240, 229, 229);
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.cointainer p{
+    font-size: 2rem;
+    font-weight: 300;
+    justify-content: center;
+    align-content: center;
+    color: #fbf5f5;
+}
+.box{
+    position:relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+    perspective: 1000px;
+}
+.img-box{
+    width: 120px;
+    height:80px;
+    padding: 10px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+}
+.one{
+    background-image: url(image/kathakali.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+}
+.two{
+    background-image: url(image/SANJH\ -\ Copy.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center;
+
+}
+.three{
+    background-image: url(image/saloni.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+}
+.four{
+    background-image: url(image/2.o\ rishu\ -\ Copy.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+}
+.text-box{
+    position: absolute;
+    width: 130%;
+    height: 90px;
+    padding: 5px;
+    text-align:left;
+    transition: all .5s ease;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    background-color:transparent;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: translateY(110px) rotate(-90deg);
+    color: #f1e9e9;
+}
+h2{
+    color: #19d28f;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+h3{
+    color: #ffde2a;
+    text-transform: uppercase;
+}
+.img-area{
+    position: relative;
+    top: 80px;
+    transform: translateY(-50%);
+}
+.box:hover .img-box{
+    opacity: 0;
+    transform: translateY(-110px) rotate(90deg);
+}
+.box:hover .text-box{
+    opacity: 1;
+    transform: rotate(0);
+}
+.feature-img{
+    position:absolute;
+    bottom: 0;
+    right: 10%;
+}
+.feature-img.anim{
+    animation-delay:1s;
+}
+.anim{
+    opacity: 0;
+    transform:translateY(30px);
+    animation: moveup 1s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 2;
+        transform:translateY(0px);
+    }
+}
